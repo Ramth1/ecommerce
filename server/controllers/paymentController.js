@@ -85,7 +85,7 @@ const verifyPayment = async (req, res) => {
   try {
     // Verify payment status with Khalti
     const response = await axios.post(
-      `${process.env.KHALTI_API_URL || 'https://khalti.com/api/v2/'}epayment/lookup/`,
+      `${process.env.KHALTI_API_URL || 'https://khalti.com/api/v2/'}epayment/verify/`,
       { pidx },
       {
         headers: { Authorization: `Key ${process.env.KHALTI_SECRET_KEY}` },
