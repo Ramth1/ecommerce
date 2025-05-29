@@ -1,6 +1,6 @@
 const {ROLES} = require("../utils/constants");
 const Admin = require("../models/Admin");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 
 const changeUsername = async(req,res)=>{
